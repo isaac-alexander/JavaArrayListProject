@@ -1,0 +1,17 @@
+// Write a program to find the intersection of two ArrayLists.
+
+import java.util.ArrayList;
+
+public class IntersectionOfTwoArrayLists {
+    public static void main(String[] args) {
+        ArrayList<Integer> a = new ArrayList<>();
+        a.add(1); a.add(2); a.add(3); a.add(4);
+
+        ArrayList<Integer> b = new ArrayList<>();
+        b.add(3); b.add(4); b.add(5); b.add(6);
+
+        a.retainAll(b);
+
+        System.out.println(a);
+    }
+}

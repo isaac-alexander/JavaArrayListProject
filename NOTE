@@ -1,0 +1,6 @@
+An ArrayList is like a resizable array.. It can grow, it can shrink, it stores objects and keeps elements in order
+
+SYNTAX
+import java.util.ArrayList; // Import the ArrayList class
+ArrayList<String> cars = new ArrayList<String>(); // Create an ArrayList object
+
