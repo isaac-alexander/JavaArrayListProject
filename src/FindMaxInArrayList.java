@@ -11,8 +11,11 @@ public class FindMaxInArrayList {
         numbers.add(5);
         numbers.add(40);
 
-        int max = Collections.max(numbers);
+        int max = findMax(numbers);
 
         System.out.println("Maximum = " + max);
+    }
+    public static int findMax(ArrayList<Integer> list) {
+        return Collections.max(list);
     }
 }

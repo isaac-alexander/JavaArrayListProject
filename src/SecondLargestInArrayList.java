@@ -11,8 +11,12 @@ public class SecondLargestInArrayList {
         numbers.add(30);
         numbers.add(20);
 
-        Collections.sort(numbers);
+        int result = secondLargest(numbers);
+        System.out.println(result);
+    }
 
-        System.out.println(numbers.get(numbers.size() - 2));
+    public static int secondLargest(ArrayList<Integer> numbers) {
+        Collections.sort(numbers);
+        return numbers.get(numbers.size() - 2);
     }
 }

@@ -10,8 +10,16 @@ public class IntersectionOfTwoArrayLists {
         ArrayList<Integer> b = new ArrayList<>();
         b.add(3); b.add(4); b.add(5); b.add(6);
 
-        a.retainAll(b);
+        ArrayList<Integer> result = intersection(a, b);
 
-        System.out.println(a);
+        System.out.println(result);
+    }
+
+    public static ArrayList<Integer> intersection(
+            ArrayList<Integer> a, ArrayList<Integer> b) {
+
+        ArrayList<Integer> result = new ArrayList<>(a);
+        result.retainAll(b);
+        return result;
     }
 }

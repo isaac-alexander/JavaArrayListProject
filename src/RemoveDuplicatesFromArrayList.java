@@ -12,10 +12,12 @@ public class RemoveDuplicatesFromArrayList {
         list.add(3);
         list.add(3);
 
-        HashSet<Integer> set = new HashSet<>(list);
-        list.clear();
-        list.addAll(set);
+        ArrayList<Integer> result = removeDuplicates(list);
+        System.out.println(result);
+    }
 
-        System.out.println(list);
+    public static ArrayList<Integer> removeDuplicates(ArrayList<Integer> list) {
+        return new ArrayList<>(new HashSet<>(list));
     }
 }
+

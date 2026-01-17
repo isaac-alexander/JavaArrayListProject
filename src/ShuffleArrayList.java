@@ -6,14 +6,19 @@ import java.util.Collections;
 
 public class ShuffleArrayList {
     public static void main(String[] args) {
-        ArrayList<String> names = new ArrayList<>();
-        names.add("A");
-        names.add("B");
-        names.add("C");
-        names.add("D");
+        ArrayList<String> list = new ArrayList<>();
+        list.add("A");
+        list.add("B");
+        list.add("C");
+        list.add("D");
 
-        Collections.shuffle(names);
-
-        System.out.println(names);
+        ArrayList<String> result = shuffle(list);
+        System.out.println(result);
     }
+
+    public static ArrayList<String> shuffle(ArrayList<String> list) {
+        Collections.shuffle(list);
+        return list;
+    }
+
 }

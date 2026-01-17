@@ -13,8 +13,13 @@ public class SortArrayListStrings {
         names.add("Alex");
         names.add("Mercy");
 
-        Collections.sort(names);
+        ArrayList<String> result = sortNames(names);
 
-        System.out.println(names);
+        System.out.println(result);
+    }
+
+    public static ArrayList<String> sortNames(ArrayList<String> list) {
+        Collections.sort(list);
+        return list;
     }
 }
