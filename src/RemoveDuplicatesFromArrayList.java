@@ -12,6 +12,8 @@ public class RemoveDuplicatesFromArrayList {
         list.add(3);
         list.add(3);
 
+        System.out.println("Original list: " + list);
+
         ArrayList<Integer> result = removeDuplicates(list);
         System.out.println(result);
     }

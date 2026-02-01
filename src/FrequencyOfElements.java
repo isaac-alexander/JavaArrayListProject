@@ -12,7 +12,9 @@ public class FrequencyOfElements {
         list.add("A");
 
         int result = frequency(list, "A");
-        System.out.println(result);
+        int result2 = frequency(list, "B");
+        int result3 = frequency(list, "B");
+        System.out.println("A: " + result + " B: " + result2 + " C: " + result3);
     }
 
     public static int frequency(ArrayList<String> list, String value) {

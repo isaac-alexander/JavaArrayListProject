@@ -12,8 +12,10 @@ public class ShuffleArrayList {
         list.add("C");
         list.add("D");
 
+        System.out.println("Original list: " + list);
+
         ArrayList<String> result = shuffle(list);
-        System.out.println(result);
+        System.out.println("Shuffled list: " + result);
     }
 
     public static ArrayList<String> shuffle(ArrayList<String> list) {

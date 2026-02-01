@@ -10,6 +10,9 @@ public class IntersectionOfTwoArrayLists {
         ArrayList<Integer> b = new ArrayList<>();
         b.add(3); b.add(4); b.add(5); b.add(6);
 
+        System.out.println("Original list: " + a);
+        System.out.println("Original list: " + b);
+
         ArrayList<Integer> result = intersection(a, b);
 
         System.out.println(result);
